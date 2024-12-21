@@ -1,0 +1,416 @@
+/* 全局樣式 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #01184e; /* 深藍背景 */
+    color: #cfd8dc; /* 字體顏色 */
+}
+
+h3 {
+    text-align: center;
+    margin: 10px 0;
+    color: #00ffff; /* 淡藍色標題 */
+}
+
+/* 容器設置 */
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(145deg, #01184e, #020c2e);
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* 左側影片區 */
+.video-section {
+    width: 20%;
+    background-color: #0a1c3b;
+    border-right: 1px solid #0e2747;
+    padding: 10px;
+    overflow-y: auto;
+    color: #cfd8dc;
+    text-shadow: 0 0 5px #00ffff;
+}
+
+#youtube-videos {
+    text-align: center;
+}
+
+.video-item {
+    margin: 10px 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.video-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00ffff;
+}
+
+.video-item img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.video-item p {
+    margin: 5px 0;
+    font-size: 14px;
+    text-align: center;
+    color: #00ffff;
+}
+
+/* 右側學習路徑圖 */
+.graph-section {
+    width: 80%;
+    padding: 10px;
+    position: relative;
+    background: #01184e;
+    box-shadow: inset 0 0 30px #000000;
+}
+
+#knowledge-graph {
+    width: 100%;
+    height: calc(100% - 50px);
+    border: 1px solid #0e2747;
+    background-color: #566275;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+/* 右上角分類與總覽 */
+.overview-buttons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.overview-buttons button {
+    padding: 8px 15px;
+    margin: 5px;
+    border: 1px solid #00ffff;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #01184e;
+    color: #00ffff;
+    font-size: 14px;
+    text-shadow: 0 0 5px #00ffff;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.overview-buttons button:hover {
+    background-color: #00ffff;
+    color: #01184e;
+    box-shadow: 0 0 15px #00ffff;
+}
+
+.category-list {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.category-list li {
+    margin-bottom: 10px;
+}
+
+.category-list a {
+    text-decoration: none;
+    color: #00ffff;
+    font-size: 14px;
+    text-shadow: 0 0 5px #00ffff;
+    transition: color 0.3s;
+}
+
+.category-list a:hover {
+    text-decoration: underline;
+    color: #1affff;
+}
+
+/* 導航列樣式 */
+.navbar {
+    background-color: #0a1c3b;
+    border-bottom: 2px solid #0e2747;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+}
+
+.navbar-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-list li {
+    margin: 0 20px;
+}
+
+.navbar-list a {
+    text-decoration: none;
+    color: #00ffff;
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 0 0 5px #00ffff;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.navbar-list a:hover {
+    color: #1affff;
+    text-shadow: 0 0 10px #1affff;
+}
+
+/* 個人資料部分 */
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 20px auto;
+    background-color: #0a1c3b;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+.profile-sidebar {
+    width: 30%;
+    background-color: #01184e;
+    padding: 20px;
+    text-align: center;
+    border-right: 2px solid #0e2747;
+    color: #00ffff;
+}
+
+.avatar-section img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 2px solid #00ffff;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+button {
+    background-color: #01184e;
+    color: #00ffff;
+    border: 1px solid #00ffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #00ffff;
+    color: #01184e;
+    box-shadow: 0 0 15px #00ffff;
+}
+
+.user-info p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #cfd8dc;
+}
+
+.profile-main {
+    width: 70%;
+    padding: 20px;
+    color: #cfd8dc;
+}
+
+h2 {
+    color: #00ffff;
+    border-bottom: 2px solid #0e2747;
+    padding-bottom: 10px;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+.section h3 {
+    color: #1affff;
+    margin-top: 15px;
+    text-shadow: 0 0 10px #1affff;
+}
+
+.section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.section li {
+    margin: 5px 0;
+    color: #cfd8dc;
+}
+
+.profile-actions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-actions button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #01184e;
+    color: #00ffff;
+    border: 1px solid #00ffff;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.profile-actions button:hover {
+    background-color: #00ffff;
+    color: #01184e;
+    box-shadow: 0 0 15px #00ffff;
+}
+
+/* 彈跳視窗樣式 */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.close-btn {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* 主容器設置 */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #0a1c3b, #020c2e);
+}
+
+/* 登入頁面風格 */
+/* 將內容放置頁面正中央 */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #0a1c3b, #020c2e);
+    margin: 0;
+}
+
+/* 登入卡片樣式 */
+.login-card {
+    background-color: #01184e;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: #cfd8dc;
+}
+
+.login-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+.login-subtitle {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #cfd8dc;
+    opacity: 0.8;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    position: relative;
+    width: 100%;
+}
+
+.form-group label {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background: #01184e;
+    padding: 0 5px;
+    font-size: 14px;
+    color: #00ffff;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #00ffff;
+    border-radius: 5px;
+    background-color: #0a1c3b;
+    color: #cfd8dc;
+    font-size: 14px;
+    box-shadow: inset 0 0 10px rgba(0, 255, 255, 0.3);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #1affff;
+    box-shadow: 0 0 15px #1affff;
+    outline: none;
+}
+
+.btn-submit {
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #00ffff, #1affff);
+    color: #01184e;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 0 0 5px #01184e;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.btn-submit:hover {
+    background: linear-gradient(135deg, #1affff, #00ffff);
+    box-shadow: 0 0 20px #1affff;
+}
+
+.login-footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #cfd8dc;
+}
+
+.login-footer a {
+    color: #00ffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.login-footer a:hover {
+    color: #1affff;
+}
